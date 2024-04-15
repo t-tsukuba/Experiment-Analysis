@@ -8,9 +8,9 @@ def img_to_grayscasle(input_filepath):
     return gray_img
 
 
-def grayscale_to_binary(gray, th):
+def grayscale_to_binary(gray_img, threshold):
     # 閾値を設定して二値化
-    _, binary_img = cv2.threshold(gray, th, 255, cv2.THRESH_BINARY)
+    _, binary_img = cv2.threshold(gray_img, threshold, 255, cv2.THRESH_BINARY)
 
     return binary_img
 

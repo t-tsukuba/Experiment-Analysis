@@ -5,7 +5,7 @@ def get_added_contours_img(filtered_contours, edge_img, line_width):
     base_img = cv2.cvtColor(edge_img, cv2.COLOR_GRAY2RGB)
     # それぞれの輪郭を描画した画像のリスト
     contour_imgs = []
-    for i in range(len((filtered_contours))):
+    for i in range(len(filtered_contours)):
         contour_img = cv2.drawContours(
             base_img,
             filtered_contours,  # 輪郭を保存したリスト
